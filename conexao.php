@@ -7,8 +7,6 @@ $bd = "empresa";
 $conexao = mysqli_connect($servidor, $usuario, $senha, $bd);
 
 if (!$conexao) {
-    die("Erro na conexão: " . mysqli_connect_error());
+    echo "Erro na conexao";
 }
-
-mysqli_set_charset($conexao, "utf8");
 ?>
